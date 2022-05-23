@@ -22,8 +22,9 @@ def do_upload():
 
 @route('/new', method='POST')
 def new_game():
-    return template('./templates/image.tpl', fen='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR')
+  FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"
+  return template('./templates/image.tpl', fen=FEN)
 
-run(host='localhost', port=8080)
+run(host='localhost', port=80)
 
-print("App is running at: http://localhost:8080/")
+print("App is running at: http://localhost:80/")
