@@ -25,6 +25,5 @@ def new_game():
   FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"
   return template('./templates/image.tpl', fen=FEN)
 
-run(host='localhost', port=80)
-
-print("App is running at: http://localhost:80/")
+print("App is running at: http://localhost:8081/")
+run(host='localhost', port=8081)
