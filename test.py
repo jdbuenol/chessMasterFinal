@@ -1,5 +1,5 @@
 import chess
 
-board =  chess.Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b')
+board =  chess.Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w')
 
-print(list(board.legal_moves)[0])
+print(board.fen().split(' ')[0])

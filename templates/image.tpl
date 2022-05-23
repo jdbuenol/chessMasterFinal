@@ -31,6 +31,24 @@
 </div>
 <div>
 <p class="display-6">FIGHT AGAINST A NN</p>
+<form action="/nn" method="post" class="my-3 form-group">
+    <label for="playernn">What color do you move?</label>
+    <select name="player" id="playernn" class="form-control my-2">
+    <option value="w">WHITE</option>
+    <option value="b">BLACK</option>
+    </select>
+    <label for="model">Model against you want to play</label>
+    <select name="model" id="model" class="form-control my-2">
+    <option value="NN1">NN1</option>
+    <option value="NN2">NN2</option>
+    <option value="NN3">NN3</option>
+    <option value="NN4">NN4</option>
+    </select>
+    <label for="move">Move you want to use</label>
+    <input type="text" class="form-control my-2" name="move" id="move" placeholder="e2e4, f7f8">
+    <input type="text" class="d-none" name="fen" id="fennn" value="{{fen}}">
+    <button class="my-2 btn btn-dark">PREDICT</button>
+</form>
 </div>
 </div
 </div>
