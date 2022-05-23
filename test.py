@@ -1,4 +1,5 @@
-from PIL import Image
+import chess
 
-im = Image.open('./test1.png')
-print(type(im.tobytes("xbm", "rgb")))
+board =  chess.Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR b')
+
+print(list(board.legal_moves)[0])
