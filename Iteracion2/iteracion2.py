@@ -196,6 +196,6 @@ Ejemplos de movimientos validos:
 
 '''
 def predict_best_move(FEN, player, depth):
-    board = chess.Board(FEN + ' ' + player)
+    board = chess.Board(FEN + ' ' + player + ' KQkq - 0 1')
     best_move = mini_max(board, 0, depth, player=="w", -10000, 10000)
     return "Your best move is " + str(best_move)
