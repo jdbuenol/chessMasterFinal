@@ -3,7 +3,7 @@
 
 <div class="d-flex flex-column justify-content-center text-center">
 <div>
-<img src="https://raw.githubusercontent.com/jdbuenol/ChessMaster/main/docs/chess.png" style="width:300px">
+<a href="/"><img src="https://raw.githubusercontent.com/jdbuenol/ChessMaster/main/docs/chess.png" style="width:300px"></a>
 </div>
 <div>
 <p class="display-2">ChessMaster the invincible AI</p>
